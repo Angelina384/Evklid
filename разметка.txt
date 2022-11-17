@@ -1,0 +1,221 @@
+<div class="about-us__block">
+        <div class="about-us__col">
+          <div class="about-us__item-max">
+            <div class="about-us__item-max__content">
+              <p class="about-us__item-max__text">Принимая во внимание показатели успешности, перспективное
+                планирование способствует подготовке и реализации новых принципов.</p>
+              <a class="btn btn__about" tabindex="0" >Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="about-us__col">
+          <article class="about-us__block__item">
+            <div class="item__img item__img-square"></div>
+            <div class="item__content">
+              <h3 class="item__title">Консультация с широким активом</h3>
+              <p class="section__text article__text">А также свежий взгляд на привычные вещи - безусловно открывает
+                новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.</p>
+            </div>
+          </article>
+          <article class="about-us__block__item">
+            <div class="item__img item__img-gear"></div>
+            <div class="item__content">
+              <h3 class="item__title">В своём стремлении повысить</h3>
+              <p class="section__text article__text">Качество жизни, они забывают, что сплочённость команды
+                профессионалов представляет собой интересный эксперимент проверки прогресса профессионального
+                сообщества.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+
+
+.about-us__block {
+    margin-top: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .about-us__col {
+    width: 49.2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .about-us__item-max {
+    height: 620px;
+    display: flex;
+    background: url('../Evklid/evklidimg/Rectangle\ 2.png') center center no-repeat;
+    background-size: cover;
+  }
+  
+  .about-us__item-max__content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    margin-top: auto;
+    background: rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.3px;
+  }
+  
+  .btn__about {
+    padding: 18px 35px 20px;
+    background-color: transparent;
+    border: 3px solid #FF9900;
+    cursor: pointer;
+    transition-property: background-color, border-color, color;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .btn__about:hover,
+  .btn__about:focus {
+    background-color: var(--yellow);
+  }
+  
+  .btn__about:active {
+    border-color: var(--orange);
+    background-color: var(--orange);
+  }
+  
+  .about-us__item-max__text {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+  }
+  
+  .about-us__block__item {
+    height: calc(100%/2 - 15px);
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    border: 1px solid #CACACA;
+  }
+  
+  .item__img {
+   width: 300px;
+   margin-bottom: 84px;
+   margin-top: auto;
+  }
+  
+  .item__content {
+    max-width: 452px;
+    margin-right: 117px;
+  }
+  
+  .item__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  
+  .article__text {
+    margin: 5px 0 0;
+  }
+  
+  .item__img-square {
+    height: 137px;
+    background: url('../Evklid/evklidimg/Frame\ 16.svg') center center no-repeat;
+    background-size: contain;
+  }
+  
+  .item__img-gear {
+    height: 153px;
+    background: url('../Evklid/evklidimg/Frame\ 12.svg') center center no-repeat transparent;
+    background-size: contain;
+  }
+/*how-we-work*/
+.how-we-work__heading {
+    margin-bottom: 50px;
+}
+
+.how-we-work__steps-list {
+    display: flex;
+    margin-bottom: 45px;
+}
+.how-we-work__steps-button {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 21.94px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.how-we-work__steps-button:hover {
+    color: #FF9900;
+}
+.how-we-work__steps-button:active {
+    color: #E1670E;
+}
+.how-we-work__steps-item:not(:first-child) {
+    margin-left: 85px;
+}
+.how-we-work__slider {
+    display: flex;
+    max-width: 1770px;
+    justify-content: space-between;
+}
+.how-we-work__slider-left {
+    width: 758px;
+}
+.how-we-work__images {
+    width: 870px;
+    height: 460px;
+}
+.how-we-work__text {
+    margin-bottom: 50px;
+}
+.how-we-work__buttons {
+    display: flex;
+    margin-bottom: 100px;
+}
+.white-button {
+    margin-left: 32px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #333333;
+    padding: 20px 38px 20px 38px;
+    background: none;
+    border: 1px solid #333333;
+    cursor: pointer;
+}
+
+    max-width: 452px;
+    padding: 65px 118px 65px 300px;
+    background: url(../Evklid/evklidimg/Frame\ 16.svg) no-repeat left center;
+    background-position: 8.3% 48%;
+    background-size: 22%;
+    padding: 7.5% 11% 7.8% 34%;
+
+
+
+
+старая версия на гридах 
+<div class="about-us__grid-container">
+        <div class="about-us__grid1">
+          <div class="about-us__grid1__info-container">
+            <div class="about-us__grid1__info"><p class="text about-us__grid1__text">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</p></div>
+              <div class="about-us__grid1__button"><button class="about-us__grid1__border-button"> Подробнее</button></div>
+          </div>
+        </div>
+        <div class="about-us__grid2">
+          <div class="about-us__grid2__info-container">
+            <h2 class="bold-heading about-us__grid2__heading">Консультация с широким активом</h2>
+            <p class="text about-us__grid2__text">А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.</p>
+          </div>
+        </div>
+        <div class="about-us__grid3">
+          <div class="about-us__grid3__info-container">
+            <h2 class="bold-heading about-us__grid3__heading">В своём стремлении повысить </h2>
+            <p class="text about-us__grid3__text">Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества.</p>
+          </div>
+        </div>
+      </div>
