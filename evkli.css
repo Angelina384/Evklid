@@ -488,6 +488,9 @@ color: #222222;
 .questions__text-hidden {
     display: none;
 }
+.ac .ac-trigger::after {
+    display: none !important;
+}
 /*footer*/
 .footer {
     background-color: #222222;
