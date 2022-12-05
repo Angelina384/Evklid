@@ -488,6 +488,28 @@ color: #222222;
 .questions__text-hidden {
     display: none;
 }
+.questions__cross:active {
+    transform: rotate(45deg);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: transform;
+}
+
+.ac {
+    border-style: none !important;
+    margin-top: 0 !important;
+    border-top: 1px solid #CACACA !important;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.last-border {
+    border-bottom: 1px solid #CACACA !important;
+}
+.ac .ac-trigger {
+    font: bold 16px Arial,sans-serif;
+    padding: 0 !important;
+}
 .ac .ac-trigger::after {
     display: none !important;
 }
