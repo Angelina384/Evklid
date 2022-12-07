@@ -427,6 +427,10 @@ color: #222222;
 .tab-content-active {
     display: block;
 }
+.work__btn--default {
+    color: #E1670E;
+}
+
 .how-we-work__images {
     max-width: 870px;
     min-height: 460px;
