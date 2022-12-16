@@ -420,7 +420,7 @@ color: #222222;
 }
 .how-we-work__slider-left {
     max-width: 758px;
-    margin-right: 142px;
+    margin-right: 15px;
 }
 .tab-content {
     display: none;
@@ -716,10 +716,40 @@ color: #222222;
     .how-we-work__text {
         width: 430px;
     }
+    .accordion-heading {
+        width: 900px;
+    }
+    .footer__text-part {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
-    
+    .hero__heading {
+        font-size: 50px;
+        line-height: 60.95px;
+    }
+    .hero__text {
+        font-size: 18px;
+        width: 588px;
+        line-height: 21.94px;
+        font-weight: 700;
+    }
+    .hero__content {
+        left: 40px;
+    }
+    .tab-content__item {
+        flex-direction: column-reverse;
+    }
+    .how-we-work__text {
+        width: 100%;
+    }
+    .tabs__image {
+        margin-bottom: 38px;
+    }
+    .accordion-heading {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 320px) {
