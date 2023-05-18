@@ -732,6 +732,7 @@ color: #222222;
         content: '';
         top: 8px;
       }
+
       .menubox{
         display: block;
         position: fixed;
@@ -746,7 +747,9 @@ color: #222222;
         background-color: #ECEFF1;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
         transition-duration: .25s;
+        
       }
+
       .menu-item {
         display: block;
         padding: 12px 24px;
@@ -840,8 +843,67 @@ color: #222222;
     .accordion-heading {
         font-size: 20px;
     }
+    .footer__container {
+        flex-direction: column-reverse;
+    }
+    .footer__nav-list {
+        display: none;
+    }
+    .form__btn {
+        margin-bottom: 50px;
+    }
+    .footer__logo-img {
+        margin-bottom: 16px;
+    }
 }
 
 @media (max-width: 320px) {
-    
+    .hero__heading {
+        font-size: 20px;
+        line-height: 24.38px;
+    }
+    .hero__text {
+        font-size: 12px;
+        width: 247px;
+        line-height: 14.63px;
+        font-weight: 700;
+    }
+    .item-max__content {
+        display: none;
+    }
+    .yellow-button {
+        font-size: 12px;
+        line-height: 14.63px;
+    }
+    .block__item-max {
+        min-height: 200px;
+    }
+    .white-button {
+        font-size: 12px;
+        line-height: 14.63px;
+        margin-left: 10px;
+    }
+    .heading {
+        font-size: 24px;
+        line-height: 29.26px;
+    }
+    .text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .hero__content {
+        left: 40px;
+    }
+    .tab-content__item {
+        flex-direction: column-reverse;
+    }
+    .how-we-work__text {
+        width: 100%;
+    }
+    .tabs__image {
+        margin-bottom: 38px;
+    }
+    .accordion-heading {
+        font-size: 20px;
+    }
 }

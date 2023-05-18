@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="/resources/demos/style.css">
   <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.css">
   <script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  
 </head>
 <body>
     <header class="header">
@@ -26,11 +28,11 @@
           </label>
        
           <ul class="menubox">
-                  <li><a class="menu-item" href="#">Home</a></li>
-                  <li><a class="menu-item" href="#">About us</a></li>
-                  <li><a class="menu-item" href="#">Blog</a></li>
-                  <li><a class="menu-item" href="#">Articles</a></li>
-                  <li><a class="menu-item" href="#">Contacts</a></li>
+                  <li><a class="menu-item" href="#">О нас</a></li>
+                  <li><a class="menu-item" href="#">Проекты</a></li>
+                  <li><a class="menu-item" href="#">Этапы</a></li>
+                  <li><a class="menu-item" href="#">Отзывы</a></li>
+                  <li><a class="menu-item" href="#">Контакты</a></li>
           </ul>
         </div>
       <a href="" class="header__logo">
@@ -365,18 +367,63 @@
       <div class="footer__right">
         <div class="footer__form-part">
         <h1 class="footer__title heading">Оставить заявку</h1>
-        <form action="" class="footer__form">
-            <input type="text" class="form__input" placeholder="Фамилия, имя и отчество*">
-            <input type="text" class="form__input" placeholder="E-mail*">
+        <form action="" class="footer__form" id="form">
+            <input 
+            type="text" 
+            class="form__input" 
+            placeholder="Фамилия, имя и отчество*"
+            id="name"
+            autocomplete="off"/>
+            <input 
+            type="text" 
+            class="form__input" 
+            placeholder="E-mail*"
+            id="mail"
+            autocomplete="off"/>
             <textarea class="form__area" name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
             <div class="form__inner">
-                <button class="form__btn btn">Отправить данные</button>
+                <button class="form__btn btn" type="submit">Отправить данные</button>
                 <label class="form__label">
                     <input class="checkbox" type="checkbox">
                     <span class="checkbox-text">Согласен на обработку данных</span>
                 </label>
             </div>
         </form>
+        <script>
+          const validate = new window.JustValidate('#form');
+        </script>
+        <script>
+          
+          const validator = new JustValidate('#form');
+
+validator
+  .addField('#name', [
+    {
+      rule: 'required',
+    },
+    {
+      rule: 'minLength',
+      value: 3,
+    },
+    {
+      rule: 'maxLength',
+      value: 15,
+    },
+  ])
+  .addField('#mail', [
+    {
+      rule: 'required',
+    },
+    {
+      rule: 'required',
+    },
+    {
+      rule: 'email',
+    },
+    ]);
+        </script>
+        
+        
       </div>
     </div>
     </div>
